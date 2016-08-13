@@ -107,7 +107,15 @@ fcd0997c-a3e9-491d-8147-a6f2284bad1d.f8aeb2c1-1a28-40e4-a192-c5c79dbba194.descri
       <matchRules/>
     </opResponse>
   </possibleResponses>
-  <availableResultExpressions/>
+  <availableResultExpressions>
+    <expression id="8d24fe2e-c10c-42f9-b633-0e229acecb72">
+      <annotation></annotation>
+      <name>response</name>
+      <fieldName>FailureMessage</fieldName>
+      <sourceType>RAWRESULT</sourceType>
+      <filters/>
+    </expression>
+  </availableResultExpressions>
   <resultExpression id="b0ef72fd-5605-40d0-8336-74ee125f5bd5">
     <annotation></annotation>
     <name>FailureMessage</name>
