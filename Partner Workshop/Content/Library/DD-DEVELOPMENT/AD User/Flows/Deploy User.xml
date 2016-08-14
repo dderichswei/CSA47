@@ -8,7 +8,47 @@
   <annotation></annotation>
   <name>Deploy User</name>
   <categories/>
-  <inputs/>
+  <inputs>
+    <staticBinding id="e7eda649-a4e1-4f54-a764-b632f370b34b">
+      <annotation></annotation>
+      <assignFromContext>true</assignFromContext>
+      <assignToContext>false</assignToContext>
+      <inputType>STRING</inputType>
+      <isList>false</isList>
+      <required>true</required>
+      <isPersisted>true</isPersisted>
+      <inputSymbol>userCommonName</inputSymbol>
+      <listDelimiter>,</listDelimiter>
+      <value>userCommonName</value>
+      <record>false</record>
+    </staticBinding>
+    <staticBinding id="ff44d304-e2ba-477f-ba7e-a592362b3fbe">
+      <annotation></annotation>
+      <assignFromContext>true</assignFromContext>
+      <assignToContext>false</assignToContext>
+      <inputType>STRING</inputType>
+      <isList>false</isList>
+      <required>true</required>
+      <isPersisted>true</isPersisted>
+      <inputSymbol>sAMAccountName</inputSymbol>
+      <listDelimiter>,</listDelimiter>
+      <value>sAMAccountName</value>
+      <record>false</record>
+    </staticBinding>
+    <staticBinding id="95386824-77b8-49c5-89b0-914d07afaad0">
+      <annotation></annotation>
+      <assignFromContext>true</assignFromContext>
+      <assignToContext>false</assignToContext>
+      <inputType>STRING</inputType>
+      <isList>false</isList>
+      <required>true</required>
+      <isPersisted>true</isPersisted>
+      <inputSymbol>userPassword</inputSymbol>
+      <listDelimiter>,</listDelimiter>
+      <value>userPassword</value>
+      <record>false</record>
+    </staticBinding>
+  </inputs>
   <possibleResponses>
     <opResponse id="3f55db67-ed89-490d-bebd-5ae7f89b87a1">
       <annotation></annotation>
@@ -27,7 +67,15 @@
       <matchRules/>
     </opResponse>
   </possibleResponses>
-  <availableResultExpressions/>
+  <availableResultExpressions>
+    <expression id="d1abf039-1bb2-4bd8-a00f-80b8cf4ec8eb">
+      <annotation></annotation>
+      <name>userCommonName</name>
+      <fieldName>userCommonName</fieldName>
+      <sourceType>RAWRESULT</sourceType>
+      <filters/>
+    </expression>
+  </availableResultExpressions>
   <resultExpression id="5ccb4c4b-26fd-42c3-b73f-8fda03895477">
     <annotation></annotation>
     <name>FailureMessage</name>
@@ -317,7 +365,22 @@
       <opRef>
         <refId>0b526177-73c8-43f6-a073-08c6fcfe03b2</refId>
       </opRef>
-      <assignments/>
+      <assignments>
+        <flowVariableAssignment id="7e5d9ee2-a5a2-43f8-9d97-5d2f803f2812">
+          <annotation></annotation>
+          <name>assignment</name>
+          <action>OVERWRITE</action>
+          <assignmentTargetType>FLOW_OUTPUT_FIELD</assignmentTargetType>
+          <contextKey>userCommonName</contextKey>
+          <expression id="b8bc535b-ce6e-4acc-ad92-77e3ddce7ed2">
+            <annotation></annotation>
+            <name>Input: userCommonName</name>
+            <fieldName>userCommonName</fieldName>
+            <sourceType>INPUT</sourceType>
+            <filters/>
+          </expression>
+        </flowVariableAssignment>
+      </assignments>
       <throttleSize>0</throttleSize>
     </step>
     <returnStep id="065eac30-35b8-49b7-9526-5a5bb8847a5b">
