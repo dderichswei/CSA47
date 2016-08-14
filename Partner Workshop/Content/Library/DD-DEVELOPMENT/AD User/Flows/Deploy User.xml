@@ -68,6 +68,13 @@
     </opResponse>
   </possibleResponses>
   <availableResultExpressions>
+    <expression id="992a0525-d9be-4309-9509-612684b34502">
+      <annotation></annotation>
+      <name>response</name>
+      <fieldName>FailureMessage</fieldName>
+      <sourceType>RAWRESULT</sourceType>
+      <filters/>
+    </expression>
     <expression id="d1abf039-1bb2-4bd8-a00f-80b8cf4ec8eb">
       <annotation></annotation>
       <name>userCommonName</name>
