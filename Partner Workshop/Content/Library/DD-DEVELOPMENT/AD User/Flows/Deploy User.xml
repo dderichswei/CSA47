@@ -188,7 +188,7 @@
           <isPersisted>true</isPersisted>
           <inputSymbol>useSSL</inputSymbol>
           <listDelimiter>,</listDelimiter>
-          <value>TRUE</value>
+          <value>false</value>
           <record>false</record>
         </staticBinding>
         <staticBinding id="f433dff2-0f36-42b4-9ebe-1d290b37d56b">
@@ -201,7 +201,7 @@
           <isPersisted>true</isPersisted>
           <inputSymbol>trustAllRoots</inputSymbol>
           <listDelimiter>,</listDelimiter>
-          <value>TRUE</value>
+          <value>true</value>
           <record>false</record>
         </staticBinding>
         <staticBinding id="0edac73b-d29f-41a4-a30c-5bcb03b4b1fa">
